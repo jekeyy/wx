@@ -1,0 +1,23 @@
+<view class="outBox">
+  <view class="form-item">
+     <input type="text" placeholder="手机号" value="{{mobile}}" bindinput="getMobile"/>
+     <image  wx:if="{{mobile.length>0}}" src="/static/images/clear_input.png" bindtap="clear" data-id="mobile" ></image>
+  </view>
+  <view class="form-item">
+     <input type="text" placeholder="验证码" value="{{code}}" bindinput="getCode"/>
+     <image wx:if="{{code.length>0}}" src="/static/images/clear_input.png" bindtap="clear" data-id="code"></image>
+     <button class="code" bindtap="getCodeInfo"> {{codeInfo}} </button>
+  </view>
+
+  <view class="form-item">
+     <input type="safe-password" password placeholder="密码" value="{{pwd}}" bindinput="getPwd"/>
+     <image wx:if="{{pwd.length>0}}" src="/static/images/clear_input.png" bindtap="clear" data-id="pwd"></image>
+
+  </view>
+
+  <view class="form-item">
+     <input type="safe-password" password placeholder="确认密码" value="{{confirmPwd}}" bindinput="getConfirmPwd"/>
+     <image wx:if="{{confirmPwd.length>0}}" src="/static/images/clear_input.png" bindtap="clear" data-id="confirmPwd"></image>
+  </view>
+  <button class="reset" bindtap="btnReset">重置密码</button>
+</view>

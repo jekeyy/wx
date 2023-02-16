@@ -1,0 +1,47 @@
+
+.outBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  
+}
+.form-box{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  border-bottom: solid 1rpx gray;
+  font-size: 30rpx;
+  align-items: center;
+  height: 90rpx;
+}
+.form-box input{
+  flex:1;
+}
+.form-box image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.btnLogin{
+  margin-top: 60rpx;
+  width: 80vw !important;
+  font-size: 30rpx;
+  background-color: #9A9BA1 !important;
+  letter-spacing: 2rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rpx;
+}
+.bottomBox{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  /* border: solid 1rpx red; */
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+#first{
+  flex:1
+}

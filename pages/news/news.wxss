@@ -1,0 +1,30 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.all{
+  height: 92%;
+  width: 100%;
+  background-color: rgb(223, 223, 223);
+  text-align: center;
+  line-height: 500rpx;
+  color: rgb(158, 158, 158);
+  font-size: 30rpx;
+}
+.foot{
+  width: 100%;
+  height: 8%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.foot view{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}

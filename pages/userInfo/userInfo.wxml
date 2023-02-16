@@ -1,0 +1,26 @@
+<view class="head">
+  <view class="allMoney">
+    <view>
+      我的余额(元)
+    </view>
+    <view>
+      {{allMoney}}.00
+    </view>
+  </view>
+</view>
+<!-- <view class="foot">
+  <view wx:for="{{yuanList}}" wx:key="index" data-index='{{index}}' bindtap="yuanList" style="background-color:{{color1}};">
+    <view class="manyMoney">
+      {{item.yuan}}元
+    </view>
+  </view>
+</view> -->
+<view class="foot">
+  <view class="manyMoney" wx:for="{{yuanList}}"wx:key='this'>
+    <button data-index='{{index}}' style="{{index===colorIndex? 'background:#7CCD7C;width: 100%;':'background:#FFF;width: 100%;'}}" type="default" bindtap="genghuan" id="{{item.yuan}}">{{item.yuan}}元</button>
+  </view>
+</view>
+<view class="dobtn">
+  <button bindtap="getMoney">充值</button>
+  <button bindtap="outMoney">提现</button>
+</view>

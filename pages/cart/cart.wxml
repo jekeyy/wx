@@ -1,0 +1,44 @@
+<!--pages/cart/cart.wxml-->
+<view class="head">
+  <view class="headNews" bindtap="nvcart">
+    <view class="hh" style="background:-webkit-linear-gradient(left,skyblue,rgb(111, 182, 211),rgb(75, 151, 180))">
+      <image src="../../static/images/通知2 .png" />
+    </view>
+    <view>
+      系统消息
+    </view>
+  </view>
+  <view class="headNews" bindtap="nvcart">
+    <view class="hh" style="background: -webkit-linear-gradient(left,rgb(209, 169, 124),rgb(206, 133, 64),rgb(150, 66, 17));">
+      <image src="../../static/images/自助推广.png" />
+    </view>
+    <view>
+      互动消息
+    </view>
+  </view>
+  <view class="headNews" bindtap="nvcart">
+    <view class="hh" style="background: -webkit-linear-gradient(left,rgb(30, 32, 138),rgb(96, 98, 216),rgb(96, 98, 216));">
+      <image src="../../static/images/通知.png" />
+    </view>
+    <view>
+      服务通知
+    </view>
+  </view>
+</view>
+<view>
+  <view class="cartNews" wx:for="{{cartNews}}" wx:key="index">
+    <view>
+      {{item.title}}
+    </view>
+    <view class="cartNews_item">
+      <view>
+        点击了解详情>>
+      </view>
+      <view>
+        {{item.time}}
+      </view>
+    </view>
+
+  </view>
+</view>
+<view bindtap="setbtn" wx:if="{{setbtn}}" class="setbtn">清空</view>

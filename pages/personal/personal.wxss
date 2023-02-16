@@ -1,0 +1,104 @@
+@import"../../static/src/all.wxss";
+.login-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 40rpx;
+  margin-top: 200rpx;
+  background: #fff;
+}
+
+.wx-login-btn {
+  margin: 60rpx 0 40rpx 0;
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+  width: 90%;
+  color: #fff;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin-left: 5%;
+  text-align: center;
+  /* padding-left: -5rpx; */
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  letter-spacing: 3rpx;
+}
+
+.account-login-btn {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 30rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-left: 5%;
+  text-align: center;
+  /* padding-left: -5rpx; */
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  letter-spacing: 3rpx;
+  background-image: linear-gradient(to right, #57a9fd 0%, #409eff 100%);
+}
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  padding: 50rpx;
+  align-items: center;
+  background-color: #fff;
+}
+.userInfo image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.headInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.headInfo text{
+  font-size: 30rpx;
+  margin: 8rpx;
+}
+.textRight{
+  position: absolute;
+  left: 650rpx;
+  font-size: 50rpx;
+}
+.myadr{
+  height: 120rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.myadr view:first-child{
+  margin-left: 55rpx;
+  font-size: 36rpx;
+}
+.myadr view:last-child{
+  position: absolute;
+  left: 650rpx;
+  font-size: 50rpx;
+}

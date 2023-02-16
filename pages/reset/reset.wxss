@@ -1,0 +1,33 @@
+.outBox{
+  margin-top: 10vh;
+}
+.form-item{
+  display: flex;
+  height: 90rpx;
+  border-bottom: solid 1rpx gray;
+  width: 90vw;
+  margin: 0rpx auto;
+  justify-content: center;
+  align-items: center;
+}
+.form-item input{
+  flex:1;
+}
+.form-item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.form-item .code{
+  height: 60rpx !important;
+  font-size: 30rpx;
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reset{
+  width: 90vw !important;
+  background-color: #9d9d9d;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+}

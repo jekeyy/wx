@@ -1,0 +1,54 @@
+<view>
+  <view wx:if="{{!loginOk}}">
+    <view class="container">
+      <view class="login-box">
+        <button type="primary" bindtap="wxlogin" class="wx-login-btn">微信登录</button>
+        <button type="primary" class="account-login-btn" bindtap="accountLogin">账号登录</button>
+      </view>
+    </view>
+  </view>
+  <block wx:else>
+    <view class="wxbgc">
+      <view class="userInfo" bindtap="userInfo">
+        <view class="headUrl">
+          <image src="{{test1==1?headUrl:noneUrl}}"></image>
+        </view>
+        <view class="headInfo">
+          <text>昵称：{{headName==null?userName:headName}}</text>
+          <text>性别：{{userInfo.gender==2?"女":"男"}}</text>
+        </view>
+        <view class="textRight">
+          <text>></text>
+        </view>
+      </view>
+      <view style="height: 10rpx;width: 100vw;"></view>
+      <view class="myadr">
+        <view>我的地址</view>
+        <view>></view>
+      </view>
+      <view class="myadr" bindtap="allMoney">
+        <view>我的钱包</view>
+        <view>></view>
+      </view>
+      <view class="myadr">
+        <view>我的收藏</view>
+        <view>></view>
+      </view>
+      <view style="height: 10rpx;width: 100vw;"></view>
+      <view class="myadr">
+        <view>设置</view>
+        <view>></view>
+      </view>
+      <view style="height: 10rpx;width: 100vw;"></view>
+      <view class="myadr" bindtap="out">
+        <view>退出</view>
+        <view>></view>
+      </view>
+      <view style="height: 10rpx;width: 100vw;"></view>
+      <view class="myadr" bindtap="call">
+        <view>客服</view>
+        <view>></view>
+      </view>
+    </view>
+  </block>
+</view>

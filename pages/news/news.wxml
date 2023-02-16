@@ -1,0 +1,11 @@
+<view class="all">
+  还没有任何消息哦~
+</view>
+<view class="foot">
+  <view style="border-right: solid 1rpx #ccc;">
+    在线客服
+  </view>
+  <view>
+    了解更多
+  </view>
+</view>

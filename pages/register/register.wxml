@@ -1,0 +1,19 @@
+<view class="outBox">
+   <view class="form-item">
+      <input type="text" value="{{username}}" placeholder="用户名" bindinput="inputUsername"/>
+      <image wx:if="{{username.length>0}}" src="/static/images/clear_input.png" id="clearUsername" bindtap="clearInfo"/>
+   </view>
+   <view class="form-item">
+      <input bindinput="inputPassword" type="safe-password"  value="{{password}}" placeholder="密码" password/>
+      <image wx:if="{{password.length>0}}" src="/static/images/clear_input.png" id="clearPassword" bindtap="clearInfo"/>
+   </view>
+   <view class="form-item">
+      <input bindinput="inputConfirmPassword" type="safe-password"  value="{{confirmPassword}}" placeholder="确认密码" password/>
+      <image wx:if="{{confirmPassword.length>0}}" src="/static/images/clear_input.png" id="clearConfirmPassword" bindtap="clearInfo"/>
+   </view>
+   <view class="form-item">
+      <input bindinput="inputMobile" type="number"  value="{{mobile}}" placeholder="手机号"/>
+      <image wx:if="{{mobile.length>0}}" src="/static/images/clear_input.png" id="clearMobile" bindtap="clearInfo"/>
+   </view>
+   <button type="primary" bindtap="btnRegister">注册</button>
+</view>

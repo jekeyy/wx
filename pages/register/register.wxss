@@ -1,0 +1,25 @@
+.outBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+.form-item{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 90rpx;
+  border-bottom: 1rpx solid #abc;
+  align-items: center;
+}
+.form-item input{
+  flex:1;
+}
+.form-item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+button{
+  width: 90vw !important;
+  margin-top: 30rpx;
+}
